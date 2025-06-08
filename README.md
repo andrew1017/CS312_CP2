@@ -8,13 +8,13 @@
 
 ## Requirements
 
-- Terraform
+- **Terraform**
   - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-- AWS CLI
+- **AWS CLI**
   - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-- AWS learner lab credentials
+- **AWS learner lab credentials**
   - From the learner lab page:
     - Start the lab
     - Click "AWS Details" 
@@ -26,5 +26,22 @@
         aws_session_token=
         ```
       -  Create a new file ```~/.aws/credentials``` and copy in this text
+      -  **NOTE** For this tutorial to work, your AWS region should be **us-east-1**
+
+- **Powershell**
+  - The commands in this tutorial are for Powershell
+ 
+- **Git**
+  - You will need git to clone this repo 
 
 ## Pipeline Overview
+
+- TODO: Diagram
+
+## Commands
+
+*Powershell Commands*
+
+- First open a Powershell instance as administrator
+- 
+
