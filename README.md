@@ -2,9 +2,22 @@
 
 *Created by Andrew Hays ([haysan@oregonstate.edu](mailto:haysan@oregonstate.edu))*
 
-## Getting Started
+## Background
 
-- Follow [this guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) to install Terraform
+- TODO
 
-- Follow [this guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) to install the AWS CLI
+## Requirements
 
+- Terraform
+  - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+- AWS CLI
+  - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+- AWS Account
+  - You will need your IAM credentials: **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY**
+  - In Powershell, create environment variables for these credentials:
+    - ```export AWS_ACCESS_KEY_ID="Replace this text with your access key id"```
+    - ```export AWS_SECRET_ACCESS_KEY="Replace this text with your secret access key"```
+
+## Pipeline Overview
