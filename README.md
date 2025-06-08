@@ -14,10 +14,17 @@
 - AWS CLI
   - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-- AWS Account
-  - You will need your IAM credentials: **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY**
-  - In Powershell, create environment variables for these credentials:
-    - ```export AWS_ACCESS_KEY_ID="Replace this text with your access key id"```
-    - ```export AWS_SECRET_ACCESS_KEY="Replace this text with your secret access key"```
+- AWS learner lab credentials
+  - From the learner lab page:
+    - Start the lab
+    - Click "AWS Details" 
+      - In the Details pane, you should see a block of text formatted as such:
+        ```
+        [default]
+        aws_access_key_id=
+        aws_secret_access_key=
+        aws_session_token=
+        ```
+      -  Create a new file ```~/.aws/credentials``` and copy in this text
 
 ## Pipeline Overview
