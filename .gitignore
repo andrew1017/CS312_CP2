@@ -1,0 +1,28 @@
+# AWS credentials and config (just in case)
+.aws/
+*.pem
+*.key
+*.crt
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+crash.log
+.terraform/
+terraform.tfvars
+terraform.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive output
+*.zip
+*.tar.gz
+*.bak
+
+# Editor/IDE files (optional but recommended)
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
