@@ -75,9 +75,8 @@
   2. Manually copy and paste the contents of the original minecraft-key.pem file from your Windows machine into this new version we made in WSL home.
      - I recommend simply opening the original file with Notepad, selecting all the text and copying it into the new version opened in WSL.
   3. Set permissions for the WSL copy of our key with ```chmod 600 ~/.minecraft-key.pem```
-- Finally, we use Ansible to set up the server
-
-- 
+- Finally, we use Ansible to set up the server with:
+  - ```ansible-playbook -i inventory setup-minecraft.yml```
 
   
   
