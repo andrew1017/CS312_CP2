@@ -41,6 +41,8 @@
 - **WSL**
   - You will need WSL to use Ansible
   - (Follow this tutorial)[https://learn.microsoft.com/en-us/windows/wsl/install] to install WSL
+  - make sure you also have terraform installed in WSL with:
+    - ```sudo snap install terraform```
 
 ## Pipeline Overview
 
@@ -67,8 +69,10 @@
 - Open a WSL terminal
 - Access your local directory for the project via the ```mnt`` folder in WSL:
   - Example command: ```cd /mnt/c/Users/chris/Documents/CS312_CP2```
-- Set permissions for the minecraft-key file
-  - ```chmod 600 minecraft-key.pem```
+- Copy key file into WSL home with: 
+  1. ```cp minecraft-key.pem ~/.minecraft-key.pem```
+  2. ```chmod 600 ~/.minecraft-key.pem```
+- 
 
   
   
