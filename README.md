@@ -41,11 +41,9 @@
   - (Follow this tutorial)[https://learn.microsoft.com/en-us/windows/wsl/install] to install WSL
 
 - **Ansible**
-  - Follow [this installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#windows)
- 
-- **WSL**
-  - You will need WSL to use Ansible
-  - (Follow this tutorial)[https://learn.microsoft.com/en-us/windows/wsl/install] to install WSL
+  - Follow [this installation guide](https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu)
+  - This should be installed through your WSL terminal.
+
 
 ## Pipeline Overview
 
