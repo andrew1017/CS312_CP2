@@ -41,7 +41,7 @@
 - **WSL**
   - You will need WSL to use Ansible
   - (Follow this tutorial)[https://learn.microsoft.com/en-us/windows/wsl/install] to install WSL
-  - make sure you also have terraform installed in WSL with:
+  - Make sure you also have terraform installed in WSL with:
     - ```sudo snap install terraform```
 
 ## Pipeline Overview
