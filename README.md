@@ -67,7 +67,9 @@
 - Open a WSL terminal
 - Access your local directory for the project via the ```mnt`` folder in WSL:
   - Example command: ```cd /mnt/c/Users/chris/Documents/CS312_CP2```
-- 
+- Set permissions for the minecraft-key file
+  - ```chmod 600 minecraft-key.pem```
+
   
   
 
