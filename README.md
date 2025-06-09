@@ -8,6 +8,10 @@
 
 ## Requirements
 
+- **Windows Powershell**
+  - This tutorial assumes you are using a Windows machine.
+  - All commands intended for Powershell.
+  
 - **Terraform**
   - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
@@ -27,12 +31,12 @@
         ```
       -  Create a new file ```~/.aws/credentials``` and copy in this text
       -  **NOTE** For this tutorial to work, your AWS region should be **us-east-1**
-
-- **Powershell**
-  - The commands in this tutorial are for Powershell
  
 - **Git**
-  - You will need git to clone this repo 
+  - You will need git to clone this repo
+
+- **Ansible**
+  - Follow [this installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#windows)
 
 ## Pipeline Overview
 
