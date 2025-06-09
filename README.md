@@ -34,7 +34,7 @@
         aws_session_token=
         ```
       -  Create a new file ```~/.aws/credentials``` and copy in this text
-      -  **NOTE** For this tutorial to work, your AWS region should be **us-east-1**
+      -  **NOTE:** for this tutorial to work, your AWS region should be **us-east-1**
  
 - **Git**
   - You will need git to clone this repo
