@@ -1,5 +1,6 @@
 # private key file
 minecraft-key.pem
+inventory
 
 # AWS credentials and config (just in case)
 .aws/

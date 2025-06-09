@@ -75,3 +75,13 @@ output "private_key_pem" {
   value     = tls_private_key.minecraft.private_key_pem
   sensitive = true
 }
+
+# auto generate inventory file
+resource "local_file" "ansible_inventory" {
+  content = <<EOF
+[minecraft]
+${aws_instance.app_server.public_ip} ansible_user=ec2-user ansible_ssh_private_key_file=./minecraft-key.pem
+EOF
+
+  filename = "${path.module}/inventory"
+}
