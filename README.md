@@ -46,9 +46,10 @@
 - Clone this REPO and switch to the directory:
   - ```git clone https://github.com/andrew1017/CS312_CP2.git```
   - ```cd CS312_CP2```
-- Use terraform commands to create resources from **main.tf:**
+- Use Terraform commands to create resources from **main.tf,** answering "yes" to any prompts:
   1. ```terraform init```
-  2. ```terraform apply```- answer **"yes"** to any prompts
+  2. ```terraform apply```
+  
 
     
  
