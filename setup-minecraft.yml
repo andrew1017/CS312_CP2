@@ -1,0 +1,60 @@
+---
+- name: Setup Minecraft Server
+  hosts: minecraft
+  become: yes
+
+  tasks:
+    - name: Install Java 
+      yum:
+        name: java-17-amazon-corretto
+        state: present
+
+    - name: Create minecraft directory
+      file:
+        path: /home/ec2-user/minecraft
+        state: directory
+        owner: ec2-user
+        group: ec2-user
+
+    - name: Download Minecraft server jar
+      get_url:
+        url: https://launcher.mojang.com/v1/objects/edb632f2ba1b8bb79f6e9c9b9b436ec6c60b8a5b/server.jar
+        dest: /home/ec2-user/minecraft/server.jar
+        owner: ec2-user
+        group: ec2-user
+        mode: '0644'
+
+    - name: Accept Minecraft EULA
+      copy:
+        dest: /home/ec2-user/minecraft/eula.txt
+        content: "eula=true\n"
+        owner: ec2-user
+        group: ec2-user
+        mode: '0644'
+
+    - name: Create systemd service for Minecraft
+      copy:
+        dest: /etc/systemd/system/minecraft.service
+        content: |
+          [Unit]
+          Description=Minecraft Server
+          After=network.target
+
+          [Service]
+          User=ec2-user
+          WorkingDirectory=/home/ec2-user/minecraft
+          ExecStart=/usr/bin/java -Xmx1024M -Xms1024M -jar server.jar nogui
+          Restart=always
+
+          [Install]
+          WantedBy=multi-user.target
+        mode: '0644'
+
+    - name: Reload systemd daemon
+      command: systemctl daemon-reload
+
+    - name: Enable and start Minecraft service
+      systemd:
+        name: minecraft
+        enabled: yes
+        state: started
