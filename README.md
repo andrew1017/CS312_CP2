@@ -64,7 +64,7 @@
 
 - First open a Powershell instance as administrator
 
-- Clone this REPO and switch to the directory:
+- Clone this REPO and switch to the newly created directory:
   - ```git clone https://github.com/andrew1017/CS312_CP2.git```
   - ```cd CS312_CP2```
   
