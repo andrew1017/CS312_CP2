@@ -74,7 +74,7 @@
 ### Part 2: WSL
 
 - Open a WSL terminal
-- Access your local directory for the project via the ```mnt`` folder in WSL:
+- Access your local directory for the project via the ```mnt``` folder in WSL:
   - Example command: ```cd /mnt/c/Users/chris/Documents/CS312_CP2```
 - We need to create a copy of the minecraft key file in our WSL home directory.
   1. Create the new file in WSL Home with: ```nano ~/.minecraft-key.pem```
