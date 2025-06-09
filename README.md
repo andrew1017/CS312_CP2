@@ -7,7 +7,7 @@
 - TODO
 
 ## Requirements
-
+- TODOOO: Add versions
 - **Windows Powershell**
   - This tutorial assumes you are using a Windows machine.
   - All commands intended for Powershell.
@@ -37,6 +37,10 @@
 
 - **Ansible**
   - Follow [this installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#windows)
+ 
+- **WSL**
+  - You will need WSL to use Ansible
+  - (Follow this tutorial)[https://learn.microsoft.com/en-us/windows/wsl/install] to install WSL
 
 ## Pipeline Overview
 
@@ -44,15 +48,27 @@
 
 ## Commands
 
-*Powershell Commands*
+### Part 1: Powershell
 
 - First open a Powershell instance as administrator
+
 - Clone this REPO and switch to the directory:
   - ```git clone https://github.com/andrew1017/CS312_CP2.git```
   - ```cd CS312_CP2```
+  
 - Use Terraform commands to create resources from **main.tf,** answering "yes" to any prompts:
   1. ```terraform init```
   2. ```terraform apply```
+  3. ```terraform output -raw private_key_pem > minecraft-key.pem```
+
+
+### Part 2: WSL
+
+- Open a WSL terminal
+- Access your local directory for the project via the ```mnt`` folder in WSL:
+  - Example command: ```cd /mnt/c/Users/chris/Documents/CS312_CP2```
+- 
+  
   
 
     
