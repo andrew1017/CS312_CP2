@@ -1,3 +1,6 @@
+# private key file
+minecraft-key.pem
+
 # AWS credentials and config (just in case)
 .aws/
 *.pem
