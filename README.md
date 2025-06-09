@@ -13,7 +13,7 @@
        - Creates a key we can use to connect with the instance
        - Outputs the public IP address of the instance. 
      - Terraform is a Infrastructure as Code (IaC) tool
-       - IaC tools like Terraform allow us to define and provision Infrastucture such as EC2 instances with code files rather than doing it manually.
+       - IaC tools like Terraform allow us to define and provision infrastucture such as EC2 instances with code files rather than doing it manually.
   2. **setup-minecraft.yml**
      - After we have created the EC2 instance using **main.tf,** this file sets up the Minecraft server inside of our instance.
      - This file is an Ansible Playbook.
