@@ -51,7 +51,7 @@
   - I used version **2.16.5** with Python version **3.12.3**
 
 - **Minecraft Java Edition**
-  - You will need to purchase and downlaod the latest [Minecraft Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc?tabs=%7B%22details%22%3A0%7D) version if you want to play.
+  - You will need to purchase and download the latest [Minecraft Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc?tabs=%7B%22details%22%3A0%7D) version if you want to play.
   - This is **NOT** required for the server setup!
 
 ## Pipeline Overview
