@@ -22,6 +22,8 @@
      - This file downloads the necessary resources to set up the server in our EC2 instance.
      - After installing resources, it starts the Minecraft server running on Port **25565** in our instance.
      - This playbook also configures the Minecraft server to restart if it goes down for any reason.
+     - I am using a Windows machine (Ansible needs Linux) so we will be using WSL to run this Playbook.
+       - WSL allows us to create a Linux environment on our Windows machine  
 
 To Proceed, first install all dependencies listed in **Requirements,** and then you can follow the instructions in **Commands** to set up the server.
 
@@ -102,6 +104,7 @@ To Proceed, first install all dependencies listed in **Requirements,** and then 
   1. Create the new file in WSL Home with: ```nano ~/.minecraft-key.pem```
   2. Manually copy and paste the contents of the original minecraft-key.pem file from your Windows machine into this new version we made in WSL home.
      - I recommend simply opening the original file with Notepad, selecting all the text and copying it into the new version opened in WSL.
+     - We need to do this because the Windows file formatting will not work with Ansible in WSL.
   3. Set permissions for the WSL copy of our key with ```chmod 600 ~/.minecraft-key.pem```
 - Finally, we use Ansible to set up the server with:
   - ```ansible-playbook -i inventory setup-minecraft.yml```
