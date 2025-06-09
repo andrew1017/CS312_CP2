@@ -10,13 +10,14 @@
 - TODOOO: Add versions
 - **Windows Powershell**
   - This tutorial assumes you are using a Windows machine.
-  - All commands intended for Powershell.
   
 - **Terraform**
   - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+  - This should be installed on your Windows machine
 
 - **AWS CLI**
   - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+  - This should be installed on your Windows machine
 
 - **AWS learner lab credentials**
   - From the learner lab page:
@@ -35,14 +36,16 @@
 - **Git**
   - You will need git to clone this repo
 
+- **WSL**
+  - You will need WSL to use Ansible
+  - (Follow this tutorial)[https://learn.microsoft.com/en-us/windows/wsl/install] to install WSL
+
 - **Ansible**
   - Follow [this installation guide](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#windows)
  
 - **WSL**
   - You will need WSL to use Ansible
   - (Follow this tutorial)[https://learn.microsoft.com/en-us/windows/wsl/install] to install WSL
-  - Make sure you also have terraform installed in WSL with:
-    - ```sudo snap install terraform```
 
 ## Pipeline Overview
 
@@ -62,16 +65,20 @@
   1. ```terraform init```
   2. ```terraform apply```
   3. ```terraform output -raw private_key_pem > minecraft-key.pem```
-
+     - This creates a key file called "minecraft-key.pem"
 
 ### Part 2: WSL
 
 - Open a WSL terminal
 - Access your local directory for the project via the ```mnt`` folder in WSL:
   - Example command: ```cd /mnt/c/Users/chris/Documents/CS312_CP2```
-- Copy key file into WSL home with: 
-  1. ```cp minecraft-key.pem ~/.minecraft-key.pem```
-  2. ```chmod 600 ~/.minecraft-key.pem```
+- We need to create a copy of the minecraft key file in our WSL home directory.
+  1. Create the new file in WSL Home with: ```nano ~/.minecraft-key.pem```
+  2. Manually copy and paste the contents of the original minecraft-key.pem file from your Windows machine into this new version we made in WSL home.
+     - I recommend simply opening the original file with Notepad, selecting all the text and copying it into the new version opened in WSL.
+  3. Set permissions for the WSL copy of our key with ```chmod 600 ~/.minecraft-key.pem```
+- Finally, we use Ansible to set up the server
+
 - 
 
   
