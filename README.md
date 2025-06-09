@@ -7,7 +7,7 @@
 - TODO
 
 ## Requirements
-- TODOOO: Add versions
+
 - **Windows Powershell**
   - This tutorial assumes you are using a Windows machine.
   - I used Powershell version **5.1.19041.5848**
@@ -43,10 +43,12 @@
 - **WSL**
   - You will need WSL to use Ansible
   - [Follow this tutorial](https://learn.microsoft.com/en-us/windows/wsl/install) to install WSL
+  - I used version **2.5.7.0**
 
 - **Ansible**
   - Follow [this installation guide](https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html#installing-ansible-on-ubuntu)
   - This should be installed through your WSL terminal.
+  - I used version **2.16.5** with Python version **3.12.3**
 
 
 ## Pipeline Overview
