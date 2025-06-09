@@ -28,3 +28,30 @@ override.tf.json
 .idea/
 .DS_Store
 Thumbs.db
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# pipx installs (safe, but just in case)
+pipx_logs/
+pipx_cache/
+pipx_env/
+
+# Ansible cache
+*.retry
+
+# General Python
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
