@@ -77,7 +77,8 @@ To Proceed, first install all dependencies listed in **Requirements,** and then 
 
 ## Pipeline Overview
 
-- TODO: Diagram
+![Pipeline Diagram](cpp2diagram.drawio.png)
+
 
 ## Commands
 
