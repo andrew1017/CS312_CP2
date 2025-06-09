@@ -10,14 +10,17 @@
 - TODOOO: Add versions
 - **Windows Powershell**
   - This tutorial assumes you are using a Windows machine.
+  - I used Powershell version **5.1.19041.5848**
   
 - **Terraform**
   - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
   - This should be installed on your Windows machine
+  - I used Terraform version **1.12.1**
 
 - **AWS CLI**
   - Follow [this installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
   - This should be installed on your Windows machine
+  - I used version **2.27.31**
 
 - **AWS learner lab credentials**
   - From the learner lab page:
@@ -35,6 +38,7 @@
  
 - **Git**
   - You will need git to clone this repo
+  - I used version **2.38.1.windows.1**
 
 - **WSL**
   - You will need WSL to use Ansible
