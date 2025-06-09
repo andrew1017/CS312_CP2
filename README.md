@@ -107,7 +107,7 @@ To Proceed, first install all dependencies listed in **Requirements,** and then 
      - I recommend simply opening the original file with Notepad, selecting all the text and copying it into the new version opened in WSL.
      - We need to do this because the Windows file formatting will not work with Ansible in WSL.
   3. Set permissions for the WSL copy of our key with ```chmod 600 ~/.minecraft-key.pem```
-- Finally, we use Ansible to set up the server with:
+- Finally, we use Ansible to set up and start the server in our instance with:
   - ```ansible-playbook -i inventory setup-minecraft.yml```
 
 ## Connecting to the Minecraft Server
