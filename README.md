@@ -4,7 +4,26 @@
 
 ## Background
 
-- TODO
+- This repo contains scripts you can run to create an AWS Minecraft server without ever visiting the AWS Management Console.
+- The server will be run within an AWS **EC2** instance.
+  - AWS EC2 instances are virtual computers in the cloud that you can rent to run applications such as our Minecraft server.
+- I have automated the process of creating an instance and starting the Minecraft server via two files in this repo:
+  1. **main.tf**
+     - This is a Terraform configuration file that sets up our EC2 instance
+       - Creates a key we can use to connect with the instance
+       - Outputs the public IP address of the instance. 
+     - Terraform is a Infrastructure as Code (IaC) tool
+       - IaC tools like Terraform allow us to define and provision Infrastucture such as EC2 instances with code files rather than doing it manually.
+  2. **setup-minecraft.yml**
+     - After we have created the EC2 instance using **main.tf,** this file sets up the Minecraft server inside of our instance.
+     - This file is an Ansible Playbook.
+       - Ansible is an open-source automation tool that allows us to automate tasks such as setting up the server.
+       - Ansible Playbooks define a sequence of instructions to be executed.
+     - This file downloads the necessary resources to set up the server in our EC2 instance.
+     - After installing resources, it starts the Minecraft server running on Port **25565** in our instance.
+     - This playbook also configures the Minecraft server to restart if it goes down for any reason.
+
+To Proceed, first install all dependencies listed in **Requirements,** and then you can follow the instructions in **Commands** to set up the server.
 
 ## Requirements
 
@@ -68,7 +87,7 @@
   - ```git clone https://github.com/andrew1017/CS312_CP2.git```
   - ```cd CS312_CP2```
   
-- Use Terraform commands to create resources from **main.tf,** answering "yes" to any prompts:
+- Use Terraform commands to create AWS resources from **main.tf,** answering "yes" to any prompts:
   1. ```terraform init```
   2. ```terraform apply```
   3. ```terraform output -raw private_key_pem > minecraft-key.pem```
