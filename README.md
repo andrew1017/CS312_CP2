@@ -79,7 +79,6 @@ To Proceed, first install all dependencies listed in **Requirements,** and then 
 
 ![Pipeline Diagram](cpp2diagram.drawio.png)
 
-
 ## Commands
 
 ### Part 1: Powershell
